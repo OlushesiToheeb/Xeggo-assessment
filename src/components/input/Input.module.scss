@@ -1,0 +1,27 @@
+@import '../../sass/variable';
+
+.input {
+    width: 85%;
+    border: 0;
+    outline: 0;
+    height: 4rem;
+    font-family: inherit;
+    padding: 0 1rem;
+    padding-left: 1.5rem;
+    font-size: 1.6rem;
+    background: transparent;
+    border: 1px solid #315c86;
+    border-radius: 15px;
+    color: #315c86;
+    transition: all 0.3s;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    }
+
+    &::-webkit-input-placeholder {
+        color: $color-grey-dark-2;
+        text-transform: capitalize;
+    }
+}
